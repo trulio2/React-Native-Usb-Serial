@@ -140,20 +140,10 @@ class UsbSerial extends Component {
     console.error(error);
   }
 
-  handleConvertButton() {
-    let data = "";
-    if (
-      this.state.returnedDataType === definitions.RETURNED_DATA_TYPES.HEXSTRING
-    ) {
-      data = RNSerialport.hexToUtf16(this.state.output);
-    } else if (
-      this.state.returnedDataType === definitions.RETURNED_DATA_TYPES.INTARRAY
-    ) {
-      data = RNSerialport.intArrayToUtf16(this.state.outputArray);
-    } else {
-      return;
-    }
-    this.setState({ output: data });
+  async handleReadButton() {
+    var rootPath = path;
+    var content = await RNFS.readFile(rootPath, 'utf8');
+    Alert.alert(content);
   }
 
   handleClearButton() {
@@ -212,9 +202,9 @@ class UsbSerial extends Component {
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.button}
-              onPress={() => this.handleConvertButton()}
+              onPress={() => this.handleReadButton()}
             >
-              <Text style={styles.buttonText}>Converter</Text>
+              <Text style={styles.buttonText}>Arquivo</Text>
             </TouchableOpacity>
           </View>
         </View>
