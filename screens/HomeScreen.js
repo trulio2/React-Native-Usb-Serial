@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { 
-    Text, 
+import {
     StyleSheet, 
     TouchableOpacity, 
     View, 
     ScrollView,
     Image,
-    Button
 } from 'react-native';
+import { 
+    Text,
+    Button,
+} from 'galio-framework';
 
 class HomeScreen extends Component {
     render(){
@@ -22,16 +24,16 @@ class HomeScreen extends Component {
 
                     <Text style={styles.text}>Conexão</Text>
                     <View style={styles.container}>
-                    <Button
-                        title="Auto"
-                        onPress={() => navigate('UsbAuto')}
-                    />
+                    <Button round size="small" color="success"
+                    onPress={() => navigate('UsbAuto')}
+                    >Auto             
+                    </Button>
                     </View>
                     <View style={styles.container}>
-                    <Button
-                        title="Manual"
-                        onPress={() => navigate('UsbManual')}
-                    />
+                    <Button round size="small" color="success"
+                    onPress={() => navigate('UsbManual')}
+                    >Manual                
+                    </Button>
                     </View>
                 </View>
              </ScrollView>
