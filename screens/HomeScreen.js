@@ -20,7 +20,7 @@ class HomeScreen extends Component {
                     source={require('../assets/robot-prod.png')}
                     />
 
-                    <Text style={styles.text}>Usb Serial Conexão</Text>
+                    <Text style={styles.text}>Conexão</Text>
                     <View style={styles.container}>
                     <Button
                         title="Auto"
@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
       container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: 5
       },
 });
 
