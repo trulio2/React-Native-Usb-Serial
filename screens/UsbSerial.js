@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   StyleSheet,
-  Text,
   View,
   TextInput,
   TouchableOpacity,
@@ -10,6 +9,12 @@ import {
   DeviceEventEmitter
 } from "react-native";
 import { RNSerialport, definitions, actions } from "react-native-serialport";
+import { 
+  Text,
+  Button,
+  Input,
+  Block
+} from 'galio-framework';
 //type Props = {};
 var RNFS = require('react-native-fs');
 
@@ -179,11 +184,9 @@ class UsbSerial extends Component {
           </ScrollView>
 
           <View style={styles.inputContainer}>
-            <TextInput
-              style={styles.textInput}
+            <Input placeholder="..." rounded
               onChangeText={text => this.setState({ sendText: text })}
               value={this.state.sendText}
-              placeholder={"..."}
             />
           </View>
           <View style={styles.line2}>
@@ -229,7 +232,6 @@ const styles = StyleSheet.create({
   header: {
     display: "flex",
     justifyContent: "center"
-    //alignItems: "center"
   },
   line: {
     display: "flex",
@@ -254,8 +256,7 @@ const styles = StyleSheet.create({
     borderWidth: 1
   },
   inputContainer: {
-    marginTop: 10,
-    borderBottomWidth: 2
+    marginTop: 10
   },
   textInput: {
     paddingLeft: 10,
