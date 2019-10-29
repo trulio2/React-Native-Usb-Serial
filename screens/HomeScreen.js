@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { 
     Text,
-    Button,
+    Button
 } from 'galio-framework';
 
 class HomeScreen extends Component {
@@ -23,13 +23,13 @@ class HomeScreen extends Component {
 
                     <Text style={styles.text}>Conexão</Text>
                     <View style={styles.container}>
-                    <Button round size="small" color="success"
+                    <Button round size="small" 
                     onPress={() => navigate('UsbAuto')}
                     >Auto             
                     </Button>
                     </View>
                     <View style={styles.container}>
-                    <Button round size="small" color="success"
+                    <Button round size="small" 
                     onPress={() => navigate('UsbManual')}
                     >Manual                
                     </Button>
@@ -54,13 +54,13 @@ const styles = StyleSheet.create({
         height: 50,
         resizeMode: 'stretch',
         alignSelf: 'center'
-      },
-      container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 5
-      },
+    },
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 5
+    },
 });
 
 export default HomeScreen;
