@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-    StyleSheet, 
-    View, 
+    StyleSheet,
+    View,
     ScrollView,
-    Image,
+    Image
 } from 'react-native';
 import { 
     Text,
