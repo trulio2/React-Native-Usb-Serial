@@ -49,6 +49,7 @@ class UsbSerial extends Component {
   }
 
   componentWillUnmount() {
+    RNSerialport.disconnect();
     this.stopUsbListener();
   }
 
