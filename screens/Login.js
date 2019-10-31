@@ -30,7 +30,7 @@ export default class Login extends React.Component {
         //It is mandatory to call this method before attempting to call signIn()
         scopes: ['https://www.googleapis.com/auth/drive.readonly'],
         // Repleace with your webClientId generated from Firebase console
-        webClientId: '',
+        webClientId: '139595051080-kkfi61ctesqklt7bsvjd3e80kojta0r7.apps.googleusercontent.com',
       });
     //Check if user is already signed in
     this._isSignedIn();
