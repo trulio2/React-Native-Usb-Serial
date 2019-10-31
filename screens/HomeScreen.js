@@ -9,6 +9,7 @@ import {
     Text,
     Button
 } from 'galio-framework';
+import Login from './Login';
 
 class HomeScreen extends Component {
     render(){
@@ -20,6 +21,10 @@ class HomeScreen extends Component {
                     style={styles.stretch}
                     source={require('../assets/robot-prod.png')}
                     />
+
+                    <View style={styles.container}>
+                    <Login></Login>
+                    </View>
 
                     <Text style={styles.text}>Conexão</Text>
                     <View style={styles.container}>

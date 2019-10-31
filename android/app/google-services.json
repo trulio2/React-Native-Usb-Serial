@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "139595051080",
+    "firebase_url": "https://usbserial-a431d.firebaseio.com",
+    "project_id": "usbserial-a431d",
+    "storage_bucket": "usbserial-a431d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139595051080:android:cad8d6539ecff7e31f287d",
+        "android_client_info": {
+          "package_name": "com.usbserial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139595051080-ghmghh2fsk2akq94grkcuieasdl9aulr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usbserial",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "139595051080-kkfi61ctesqklt7bsvjd3e80kojta0r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIviMhEVMYW7JphESwL00WkpTgXGHs3g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139595051080-kkfi61ctesqklt7bsvjd3e80kojta0r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
