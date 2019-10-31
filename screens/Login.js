@@ -30,7 +30,7 @@ export default class Login extends React.Component {
         //It is mandatory to call this method before attempting to call signIn()
         scopes: ['https://www.googleapis.com/auth/drive.readonly'],
         // Repleace with your webClientId generated from Firebase console
-        webClientId: '139595051080-kkfi61ctesqklt7bsvjd3e80kojta0r7.apps.googleusercontent.com',
+        webClientId: '',
       });
     //Check if user is already signed in
     this._isSignedIn();
@@ -39,11 +39,10 @@ export default class Login extends React.Component {
   _isSignedIn = async () => {
     const isSignedIn = await GoogleSignin.isSignedIn();
     if (isSignedIn) {
-      alert('User is already signed in');
+      console.log('User is already signed in');
       //Get the User details as user is already signed in
       this._getCurrentUserInfo();
     } else {
-      //alert("Please Login");
       console.log('Please Login');
     }
     this.setState({ gettingLoginStatus: false });
@@ -120,7 +119,7 @@ export default class Login extends React.Component {
               style={styles.imageStyle}
             />
             <Text style={styles.text}>
-              Name: {this.state.userInfo.user.name}{' '}
+              Nome: {this.state.userInfo.user.name}{' '}
             </Text>
             <Text style={styles.text}>
               Email: {this.state.userInfo.user.email}
